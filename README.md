@@ -8,4 +8,4 @@
 
 - Stephanie Cruz - [stephanie-cruz](https://github.com/stephanie-cruz)
 - Gregg Spinetti - [GreggSpinetti](https://github.com/GreggSpinetti)
-- Victor Vieira - [](https://github.com/)
+- Victor Vieira - [victorvieirap](https://github.com/victorvieirap)
