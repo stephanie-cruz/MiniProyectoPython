@@ -7,5 +7,5 @@
 ### Autores 🖋
 
 - Stephanie Cruz - [stephanie-cruz](https://github.com/stephanie-cruz)
-- Gregg Spinetti - [](https://github.com/)
+- Gregg Spinetti - [GreggSpinetti](https://github.com/GreggSpinetti)
 - Victor Vieira - [](https://github.com/)
