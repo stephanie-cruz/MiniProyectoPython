@@ -1,4 +1,3 @@
-PIZZA_GRANDE = 8
 
 import enum
 class Sizes(enum.Enum): # Tamaños de las pizzas
