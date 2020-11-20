@@ -26,7 +26,7 @@ def give_options(format,title,options): # Dato un enum, lista las opciones dispo
         if format == 'inline':
             text = text + option.name + ' ('+option.value[0]+') '
         else:
-            print(text + option.name + ' ('+option.value[0]+') ')
+            print('* '+text + option.name + ' ('+option.value[0]+') ')
     if format != 'inline':
         array = []
         print('\n')
