@@ -18,3 +18,9 @@ class Drinks(enum.Enum): # Bebidas
    Cocacola = ['co',3]
    Frescolita = ['fr',4]
    Chinotto = ['ct',2.5]
+
+
+class TopClients(enum.Enum): # Bebidas
+   StephanieCruz = ['26473481',10]
+   Victorvieira = ['26473482',20]
+   GreggSpinetti = ['26473483',25]
