@@ -19,7 +19,7 @@ def get_enum_key(options,option,val): # retorna el nombre, dado el valor del enu
        if opt.value[val] == option:
            return opt.name
  
-def give_options(format,title,options): # Dato un enum, lista las opciones disponibles e itera hasta que la respuesta sea válida. Puede darse el caso de que retorne un valor numerico, o una lista con valores (no repetidos), dependiendo de los parámetros pasados
+def give_options(format,title,options,duplicates): # Dato un enum, lista las opciones disponibles e itera hasta que la respuesta sea válida. Puede darse el caso de que retorne un valor numerico, o una lista con valores (no repetidos), dependiendo de los parámetros pasados
    print('\n****** '+title+' : ******\n')
    text = ''
    for option in (options):
@@ -41,7 +41,10 @@ def give_options(format,title,options): # Dato un enum, lista las opciones dispo
                    if format == 'inline':
                        return  get_enum_key(options,current_option,0)
                    else:
-                       array = insert_into_array(array, get_enum_key(options,current_option,0))
+                       if duplicates == False:
+                            array = insert_into_array(array, get_enum_key(options,current_option,0))
+                       elif duplicates == True:
+                            array.append(get_enum_key(options,current_option,0))
                    correct = True
        if correct == False:
            current_option = input(text + '. Por favor, indique una respuesta válida : ')
