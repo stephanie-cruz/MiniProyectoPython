@@ -17,6 +17,8 @@ def main():
     quantity = 1
     orden = input('\nPresione "s" para realizar una nueva orden: ')
     orden = fn.yes_or_not("Desea realizar una nueva orden? (s/n). Debe seleccionar una opcion correcta : ",orden) 
+    if orden == "s":
+        pf.get_personal_data()
     while orden == 's':      
         pf.order_pizza(quantity)
         orden = input('Desea ordenar otra pizza (s/n)? ')
