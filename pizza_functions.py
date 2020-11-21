@@ -42,12 +42,13 @@ def get_personal_data():
         
 
 def order_pizza(quantity):
-  get_personal_data()
   print('\n')
   print('------------------------- Pizza número: ',quantity,'-------------------------')
   size = fn.give_options('inline','Tamaño',enums.Sizes,False) #.name
   ingredients = fn.give_options('not-inline','Ingredientes',enums.Ingredients,False)
-  print('\nUsted seleccionó una pizza '+size, end =" con ")
+  print('\nUsted seleccionó una pizza '+size, end =" ")
+  if len(ingredients) > 0:
+      print(' con : ', end="")
   for i in ingredients:
      print(i, end=", ")
   get_pizza_price(size,ingredients)
